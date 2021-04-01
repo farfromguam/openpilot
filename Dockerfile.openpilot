@@ -28,6 +28,8 @@ COPY ./opendbc ${OPENPILOT_PATH}/opendbc
 COPY ./cereal ${OPENPILOT_PATH}/cereal
 COPY ./panda ${OPENPILOT_PATH}/panda
 COPY ./selfdrive ${OPENPILOT_PATH}/selfdrive
-COPY *.sh ${OPENPILOT_PATH}/
+COPY ./launch_chffrplus.sh ${OPENPILOT_PATH}/launch_chffrplus.sh
+COPY ./launch_openpilot.sh ${OPENPILOT_PATH}/launch_openpilot.sh
+COPY ./launch_env.sh ${OPENPILOT_PATH}/launch_env.sh
 
 RUN scons -j$(nproc)
