@@ -6,4 +6,4 @@ services:
       dockerfile: ./Dockerfile.openpilot
     ports:
       - "5000:5000"
-
+    entrypoint: ./launch_openpilot.sh
